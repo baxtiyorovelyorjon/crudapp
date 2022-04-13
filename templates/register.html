@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <div class="registr">
+            <h1>
+                Ro'yhatdan o'tish
+            </h1>
+            <p>
+                Siz ro'yhatdan o'tganmisiz?<a href="../index.html">Kirish</a>
+            </p>
+            <input type="text" placeholder="Ismingiz" > <br>
+            <input type="text" placeholder="foydalanuvchi nomi"> <br>
+            <input type="email" placeholder="Email pochtangiz"> <br>
+            <input type="password" placeholder="parolni yarting"> <br>
+            <input type="password" placeholder="parolni takrorlang "> <br>
+            <input type="file">
+            
+            <a href="./task/index.html"><button class="btn" type="submit">Ro'yhatdan o'tish</button></a>
+        </div>
+    </div>
+{% endblock content %}

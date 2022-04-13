@@ -1,0 +1,37 @@
+1.Install VsCode and Python for Windows
+https://www.python.org/downloads/windows/
+https://code.visualstudio.com/download#
+
+2.Overview of Django
+Models-View-Template
+
+3.Test Python
+'py -3 --version'
+
+4.Create Virtual Environment where you install python packages to isolate from other packages in your system
+
+'py -3 -m venv env'
+
+5.Activate Environment
+Windows disable running such scripts,fix with  POWERSHELL as admin
+'.\env\Scripts\activate'
+
+6.Install Django
+'python -m pip install django'
+
+Test Django
+'python -m django --version'
+
+7.Start a new project in the directory
+'django-admin startproject portfolio'
+
+8.Check project
+'pyhton manage.py runserver'
+
+9.Create an app
+'python manage.py startapp john'
+
+10.Add app to settings
+
+11.Install Pillow which is a pyhton Imaging Library
+'python -m pip install Pillow'

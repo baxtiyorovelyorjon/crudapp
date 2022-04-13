@@ -1,0 +1,235 @@
+/* Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+:root {
+    --blue-color-1: #696CFF;
+    --blue-color-2: #04C3EC;
+    --black-color: #363636;
+    --grey-color: #BBC0D4;
+    --white-color: #FFFFFF;
+}
+
+/* Navbar section */
+header {
+    position: fixed;
+    background: var(--blue-color-1);
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a img {
+    width: 120px;
+    object-fit: contain;
+}
+
+.search {
+    width: 200px;
+    height: 30px;
+    border-radius: 2px;
+    border: none;
+    font-size: 15px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.nav-items,
+.logo {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.nav-items form a i {
+    font-size: 20px;
+    margin-left: 10px;
+    color: var(--white-color);
+}
+
+.nav-user {
+    width: 40px;
+    margin: 0 20px;
+    border-radius: 50%;
+}
+
+.nav-btn {
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    margin-left: 10px;
+    font-size: 12px;
+    background: var(--blue-color-1);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    transition: .2s;
+}
+
+.nav-btn:hover {
+    cursor: pointer;
+    background: var(--white-color);
+    color: var(--black-color);
+}
+
+.free {
+    height: 80px;
+}
+
+/* Main section */
+.main-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.main-box {
+    width: 30%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: var(--blue-color-2);
+}
+
+.main-box h1 {
+    font-size: 80px;
+    color: var(--white-color);
+    text-align: center;
+    padding-top: 60px;
+    letter-spacing: 5px;
+}
+
+.main-box div h3 {
+    display: inline-block;
+    padding-top: 70px;
+    color: var(--white-color);
+}
+
+.main-box div {
+    text-align: center;
+}
+
+.main-box div i {
+    font-size: 17px;
+    padding-right: 5px;
+    color: var(--white-color);
+}
+
+/* Table section */
+.table {
+    margin-top: 50px;
+}
+
+thead {
+    background: var(--blue-color-1);
+    height: 50px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+th {
+    color: var(--white-color);
+    width: 10%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+   
+}
+
+td {
+    border: 1px solid var(--blue-color-1);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--black-color);
+}
+
+.user-img img {
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--blue-color-1);
+}
+
+.table-tbn {
+    border: none;
+    background: var(--blue-color-1);
+    color: var(--white-color);
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    border-radius: 2px;
+    transition: .3s;
+}
+
+.table-tbn1 {
+    border: none;
+    background: var(--blue-color-2);
+    color: var(--white-color);
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    border-radius: 2px;
+    transition: .3s;
+}
+
+.table-tbn:hover {
+    cursor: pointer;
+    border: 1px solid var(--blue-color-1);
+    background: var(--white-color);
+    color: var(--black-color);
+    border-radius: 2px;
+}
+
+.table-tbn1:hover {
+    cursor: pointer;
+    border: 1px solid var(--blue-color-2);
+    background: var(--white-color);
+    color: var(--black-color);
+    border-radius: 2px;
+}
+
+/* Footer section */
+footer {
+    background: var(--blue-color-1);
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.footer-p {
+    font-size: 17px;
+    color: var(--white-color);
+}
+
+.footer-right a i {
+    font-size: 20px;
+    color: var(--white-color);
+    margin-left: 10px;
+}
+
+#air {
+    z-index: 0;
+}
+

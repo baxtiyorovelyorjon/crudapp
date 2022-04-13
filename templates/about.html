@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Home {% endblock title %}
+{% block content %}
+
+
+
+
+
+    <main>
+        <div class="main-boxes container">
+            <div class="main-box">
+                <h1>22</h1>
+                <div>
+                    <i class="bi bi-gender-male"></i>
+                    <h3>ERKAK</h3>
+                </div>
+            </div>
+
+            <div class="main-box">
+                <h1>11</h1>
+                <div>
+                    <i class="bi bi-gender-female"></i>
+                    <h3>AYOL</h3>
+                </div>
+            </div>
+
+            <div class="main-box">
+                <h1>33</h1>
+                <div>
+                    <h3>UMUMIY</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- /Main section -->
+
+<!-- Diagram section -->
+    <div class="container">
+        <div id="air" style="width: 500px; height: 400px; z-index: 0; margin-left: 350px; margin-top: 50px;"></div>
+    </div>
+<!-- /Diagram section -->
+
+
+<!-- Table section -->
+
+    <div class="table container">
+        <table>
+            <thead>
+                <th>USER RASMLAR</th>
+                <th>ISM</th>
+                <th>USERNAME</th>
+                <th>EMAILLAR</th>
+                <th>YANGILASH</th>
+                <th>YO'Q QILISH</th>
+            </thead>
+
+            <tbody>
+            {% for add in useradd %}
+                <tr>
+                    <td><div class="user-img"><img src="{{add.images.url}}" alt="user"></div></td>
+                    <td>{{ add.name}}</td>
+                    <td>{{add.user_name}}</td>
+                    <td>{{add.email}}</td>
+                    <td><a href="#"><button class="table-tbn1">UPDATE</button></a></td>
+                    <td><a href="#"><button class="table-tbn">DELETE</button></a></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+<!-- /Table section -->
+
+<!-- Pagination section -->
+    
+<!-- Pagination section -->
+
+<!-- Footer section -->
+
+    <footer>
+        <div class="footer container">
+            <div class="footer-left">
+                <p class="footer-p">
+                    &copy;Copyright by Black Coders 15.12.2021
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Diagram section -->
+    <script src="https://www.google.com/jsapi"></script>
+    <script src="./ahfjasl.js"></script>
+    <script>
+    google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(drawChart);
+    function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+    ['vvvv', 'Объём'],
+    ['Erkaklar',     50],
+    ['Ayollar', 30],
+    ['Umumiy',    70],
+
+    ]);
+    var options = {
+    title: 'Состав воздуха',
+    is3D: true,
+    pieResidueSliceLabel: 'Остальное'
+    };
+    var chart = new google.visualization.PieChart(document.getElementById('air'));
+    chart.draw(data, options);
+    }
+    </script>
+    <!-- /Diagram section -->
+
+<!-- /Footer section -->
+
+<!-- Bootstrap section -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- /Bootstrap section -->
+{% endblock content %}

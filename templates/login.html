@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="container">
+         <div class="log">
+            <h1>
+                Kirish
+            </h1>
+            <p>
+                Assalomu alaykum, bizning platformamizga hush kelibsiz
+            </p>
+            <input type="text" placeholder="Foydalanuvchi nomi " class="link"> <br>
+            <input type="password" placeholder="Parol" class="link"><br>
+            <input type="radio" id="ok">
+            
+            <label for="ok">Eslab qolish</label> <br>
+            <a href="page/task/index.html"><button class="btn">Kirish</button></a>
+            <p>
+                Yangimisiz?<a href="./page/regist.html">Ro'yhatdan o'ting</a>
+            </p>
+            <p>
+                --Yoki ijtimoiy tarmoqlar bilan kiring-- 
+            </p>
+            <div class="local">
+                <a href="www.facebook.com"><i class="bi bi-facebook"></i>facebook bilan Kirish</a>
+            </div>
+
+                <a href="www.google.com">
+                <img src="./img/google.jpg" alt="">
+            </a>
+
+
+
+            
+  
+        </div>
+    </div>
+{% endblock content %}
